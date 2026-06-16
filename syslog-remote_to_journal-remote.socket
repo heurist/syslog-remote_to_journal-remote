@@ -1,0 +1,8 @@
+[Unit]
+Description=Forward syslog remote messages to systemd-journal-remote
+
+[Socket]
+ListenDatagram=514
+
+[Install]
+WantedBy=sockets.target
